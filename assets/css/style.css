@@ -1,0 +1,35 @@
+.debug {
+    * {
+        border: green dashed 0.25px;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.header-style {
+    background-color: #222222;
+    height: 55px;
+    align-items: center;
+}
+
+.header-logo {
+    padding-left: 20px;
+    height: 100%;
+}
+
+.header-search {
+
+}
+
+.header-auth-buttons {
+
+}
