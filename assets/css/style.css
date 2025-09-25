@@ -32,7 +32,7 @@
 }
 
 .header-search {
-    margin-right: 1000px;
+    flex-grow: 1;
     padding-left: 20px;
 }
 .header-search input {
@@ -124,15 +124,19 @@
     display: grid;
     grid-template-columns: 2fr 1px 1fr; 
     gap: 1rem; /
-    height: 100vh;
+    height: calc(100vh - 55px - 65px);
     width: 100%; 
-    padding: 0 1rem; 
+    padding: 0 1rem;
+    padding-top: 15px; 
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #222222;
 }
 
 .grid-songs {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 1rem; 
+    gap: 1rem;
 }
 
 .line-divider {
@@ -140,6 +144,28 @@
     width: 1px;
 }
 
-.selected-song {
-    
+.song-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: start; 
+}
+
+.song-cover {
+    width: 85%;  
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.song-details {
+
+}
+
+.song-title {
+
+}
+
+.song-genre {
+
 }
