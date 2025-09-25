@@ -1,12 +1,12 @@
 .debug {
     * {
-        border: green dashed 0.25px;
+        border: rgb(255, 0, 0) dashed 0.15px;
     }
 }
 
- @font-face {
+@font-face {
     font-family: Arial, Helvetica, sans-serif;
- }
+}
 
 * {
     margin: 0;
@@ -32,16 +32,23 @@
 }
 
 .header-search {
+    margin-right: 1000px;
     padding-left: 20px;
-    
-    input {
-        height: 35px;
-        width: 300px;
-        background-color: #5a5a5a;
-    }
-    input::placeholder{
-        color: #aaaaaa;
-    }
+}
+.header-search input {
+    height: 35px;
+    width: 300px;
+    background-color: #5a5a5a;
+    border: none;
+    border-radius: 2px;
+    padding-left: 35px;
+    background-image: url('../img/lens.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+}
+.header-search input::placeholder {
+    color: #aaaaaa;
 }
 
 .header-login-buttons {
@@ -49,7 +56,90 @@
 }
 
 .btn {
-    padding: 15px;
+    padding: 10px 10px;           
     background: none;
     color: antiquewhite;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    border-color: #aaaaaa;
+}
+
+.search-bar-song {
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: #2f2f2f;
+}
+.search-bar-song input {
+    background-color: #2f2f2f;
+    height: 40px;
+    width: 430px;
+    border-radius: 20px;
+    padding-left: 35px;
+    border-color: #aaaaaa;
+    border-style: solid;
+    border-width: 1px;
+    background-image: url('../img/lens.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+}
+.search-bar-song input::placeholder {
+    color: #aaaaaa;
+}
+
+.grid-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto 1px 32%;
+    gap: 24px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+    background-color: #222222;
+}
+
+.songs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px 16px;
+}
+
+.songs div {
+    list-style: none;
+    h4 {
+        color: rgb(188, 188, 188);
+    }
+    p {
+        color: #5a5a5a;
+    }
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1px 1fr; 
+    gap: 1rem; /
+    height: 100vh;
+    width: 100%; 
+    padding: 0 1rem; 
+}
+
+.grid-songs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1rem; 
+}
+
+.line-divider {
+    background-color: #ccc;
+    width: 1px;
+}
+
+.selected-song {
+    
 }
